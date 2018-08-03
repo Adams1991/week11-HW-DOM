@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const scientificName = event.target.scientificname.value;
     const category = event.target.category.value;
 
-    const newAnimal = document.createElement("p");
-    newAnimal.textContent = `Common Name: ${commonName}; Scientific Name: ${scientificName}; Category: ${category}.`;
+    const newAnimal = document.createElement("li");
+    newAnimal.textContent = `Common Name: ${commonName},  Scientific Name: ${scientificName},  Category: ${category}.`;
 
     const animalList = document.querySelector('#endangered-list');
     animalList.appendChild(newAnimal);
