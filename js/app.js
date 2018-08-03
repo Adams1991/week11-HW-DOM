@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
   const form = document.querySelector('#new-animal-form');
@@ -9,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const category = event.target.category.value;
 
     const newAnimal = document.createElement("li");
-    newAnimal.textContent = `Common Name: ${commonName},  Scientific Name: ${scientificName},  Category: ${category}.`;
+    newAnimal.textContent = `Common Name: ${commonName},   Scientific Name: ${scientificName},    Category: ${category}.`;
 
     const animalList = document.querySelector('#endangered-list');
     animalList.appendChild(newAnimal);
